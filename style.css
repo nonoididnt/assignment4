@@ -1,0 +1,206 @@
+:root {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1rem 2rem;
+}
+
+.left-placeholder {
+  width: 12rem;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.auth-buttons input {
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+  background: #fff;
+  cursor: pointer;
+}
+
+.auth-buttons input:last-child {
+  background: #000;
+  color: #fff;
+}
+
+nav {
+  background-color: #eee;
+  padding: 0.8rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+nav li {
+  cursor: pointer;
+}
+
+nav li:hover {
+  text-decoration: underline;
+}
+
+
+main {
+  padding: 2rem;
+}
+
+.main-content h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.byline {
+  font-size: 1.4rem;
+  color: #777;
+  margin-bottom: 1.2rem;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1.5rem 0;
+}
+.content-wrapper {
+  display: flex;
+  align-items: flex-start; /* 추가: 사이드바랑 본문 높이 맞추기 */
+  gap: 4rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  flex-wrap: nowrap;       /* 기본값이긴 하지만 명시해줘도 좋아 */
+}
+
+.main-content {
+  flex: 3;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  overflow: visible;       /* 추가: 잘리지 않게 */
+  min-height: 1px;         /* 추가: 컨텐츠 없으면 0으로 접히는 문제 방지 */
+}
+
+.sidebar {
+  flex: 1;
+  font-size: 1.4rem;
+  overflow: visible;       /* 추가: 혹시 사이드바 내용이 많을 경우 대비 */
+}
+
+main {
+  overflow: visible;       /* 추가: 전체 영역에서 스크롤 숨김 방지 */
+}
+
+
+.sidebar {
+  flex: 1;
+  font-size: 1.4rem;
+}
+
+.sidebar h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.05);
+  line-height: 1.6;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.sidebar li:hover {
+  background: #f0f0f0;
+}
+
+.main-content {
+  flex: 3;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+}
+footer {
+  background-color: #eee;
+  padding: 3rem 2rem;
+  border-top: 1px solid #ccc;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  flex-shrink: 0;
+}
+
+.logo-box {
+  background-color: #ccc;
+  padding: 4rem 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.footer-info {
+  flex: 1;
+  min-width: 30rem;
+}
+
+.footer-info p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
