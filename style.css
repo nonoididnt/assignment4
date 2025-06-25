@@ -97,31 +97,10 @@ main {
 }
 .content-wrapper {
   display: flex;
-  align-items: flex-start; /* 추가: 사이드바랑 본문 높이 맞추기 */
   gap: 4rem;
   max-width: 120rem;
   margin: 0 auto;
-  flex-wrap: nowrap;       /* 기본값이긴 하지만 명시해줘도 좋아 */
 }
-
-.main-content {
-  flex: 3;
-  font-size: 1.6rem;
-  line-height: 1.8;
-  overflow: visible;       /* 추가: 잘리지 않게 */
-  min-height: 1px;         /* 추가: 컨텐츠 없으면 0으로 접히는 문제 방지 */
-}
-
-.sidebar {
-  flex: 1;
-  font-size: 1.4rem;
-  overflow: visible;       /* 추가: 혹시 사이드바 내용이 많을 경우 대비 */
-}
-
-main {
-  overflow: visible;       /* 추가: 전체 영역에서 스크롤 숨김 방지 */
-}
-
 
 .sidebar {
   flex: 1;
